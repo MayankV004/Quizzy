@@ -64,7 +64,7 @@ export default function Quiz() {
   const handleSubmitQuiz = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/v1/quiz/submit",
+        "https://quizzy-backend-gnv8.onrender.com/v1/quiz/submit",
         {
           score,
           answers: selectedAnswers,
@@ -96,7 +96,7 @@ export default function Quiz() {
   };
 
   if (!quizData)
-    return <div className="text-green-600 text-xl ">Loading Quiz...</div>;
+    return <div className="text-green-600 text-xl w-full h-screen flex justify-center items-center"><div>Loading Quiz...</div></div>;
 
   if (quizSubmitted) {
     return (
