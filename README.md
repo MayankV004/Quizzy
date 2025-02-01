@@ -44,7 +44,7 @@ A Gamified Quizzing Website that makes learning fun and interactive! Challenge y
 - Responsive design for all devices
 
 ## Live Demo
-<video controls src="Quizzy - Google Chrome 2025-02-01 23-00-39.mp4" title="Title"></video>
+<video controls src="Quizzy - Google Chrome 2025-02-01 23-00-39-1.mp4" title="Title"></video>
 
 #### Home Page
 ![alt text](<Frontend//public/Screenshot 2025-02-01 223108.png>)
