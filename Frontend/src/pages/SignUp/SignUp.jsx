@@ -16,7 +16,7 @@ function SignUp() {
   const handleSubmit = async(e)=>{
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/v1/auth/signup", input)
+      const res = await axios.post("https://quizzy-backend-gnv8.onrender.com/v1/auth/signup", input)
       if(res)
       {
         toast.success("Account created successfully!!")
