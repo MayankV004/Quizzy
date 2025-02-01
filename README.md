@@ -47,34 +47,34 @@ A Gamified Quizzing Website that makes learning fun and interactive! Challenge y
 <video controls src="Quizzy - Google Chrome 2025-02-01 23-00-39.mp4" title="Title"></video>
 
 #### Home Page
-![alt text](<Screenshot 2025-02-01 223108.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223108.png>)
 
 #### Login Page
-![alt text](<Screenshot 2025-02-01 223227.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223227.png>)
 
 #### SignUp Page
-![alt text](<Screenshot 2025-02-01 223310.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223310.png>)
 
 #### Dashboard
-![alt text](<Screenshot 2025-02-01 223519.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223519.png>)
 
 #### How To Play Page
-![alt text](<Screenshot 2025-02-01 223139.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223139.png>)
 
-![alt text](<Screenshot 2025-02-01 223158.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223158.png>)
 
 #### About us Page
-![alt text](<Screenshot 2025-02-01 223211.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223211.png>)
 
-![alt text](<Screenshot 2025-02-01 223218.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223218.png>)
 
 #### Quiz Page
-![alt text](<Screenshot 2025-02-01 223413.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223413.png>)
 
 #### Result Page
-![alt text](<Screenshot 2025-02-01 223442.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223442.png>)
 
-![alt text](<Screenshot 2025-02-01 223505.png>)
+![alt text](<Frontend//public/Screenshot 2025-02-01 223505.png>)
 
 
 
