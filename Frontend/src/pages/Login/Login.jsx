@@ -16,7 +16,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/v1/auth/login",
+        "https://quizzy-backend-gnv8.onrender.com/v1/auth/login",
         credentials,
         {
           withCredentials: true
