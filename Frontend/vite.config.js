@@ -11,9 +11,6 @@ export default defineConfig({
         changeOrigin: true,  // This helps with CORS issues
         rewrite: (path) => path.replace(/^\/api/, '')  // Optionally rewrite the path
       },
-      "/local":{
-        target:"http://localhost:3000"
       }
-    }
   }
 })

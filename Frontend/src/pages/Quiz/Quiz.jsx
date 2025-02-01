@@ -64,7 +64,7 @@ export default function Quiz() {
   const handleSubmitQuiz = async () => {
     try {
       await axios.post(
-        "https://quizzy-backend-gnv8.onrender.com/v1/quiz/submit",
+        "http://localhost:3000/v1/quiz/submit",
         {
           score,
           answers: selectedAnswers,

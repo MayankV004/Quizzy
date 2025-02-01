@@ -10,7 +10,7 @@ export default function Header() {
   useEffect(() => {
     const verifyAuth = async () => {
       try {
-        await axios.get("https://quizzy-backend-gnv8.onrender.com/v1/auth/verify", {
+        await axios.get("http://localhost:3000/v1/auth/verify", {
           withCredentials: true,
         });
         setIsAuthenticated(true);
@@ -25,7 +25,7 @@ export default function Header() {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "https://quizzy-backend-gnv8.onrender.com/v1/auth/logout",
+        "http://localhost:3000/v1/auth/logout",
         {},
         { withCredentials: true }
       );

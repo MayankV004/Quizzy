@@ -11,7 +11,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("https://quizzy-backend-gnv8.onrender.com/v1/auth/user", {
+        const response = await axios.get("http://localhost:3000/v1/auth/user", {
           withCredentials: true,
         });
         setUserData(response.data);
