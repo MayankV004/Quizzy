@@ -1,41 +1,86 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import toast from "react-hot-toast";
 
-function Header() {
+export default function Header() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const verifyAuth = async () => {
+      try {
+        await axios.get("http://localhost:3000/v1/auth/verify", {
+          withCredentials: true,
+        });
+        setIsAuthenticated(true);
+      } catch (error) {
+        setIsAuthenticated(false);
+      }
+    };
+
+    verifyAuth();
+  }, []);
+
+  const handleLogout = async () => {
+    try {
+      await axios.post(
+        "http://localhost:3000/v1/auth/logout",
+        {},
+        { withCredentials: true }
+      );
+      setIsAuthenticated(false);
+      toast.success("Logged out successfully!");
+      navigate("/login");
+    } catch (error) {
+      toast.error("Logout failed");
+    }
+  };
+
   return (
-    <header className="bg-white shadow">
-      <nav className="container mx-auto h-[70px] px-4 py-4 flex justify-between items-center">
-        <Link
-          to="/"
-          className="text-3xl font-bold text-green-400 transition-all duration-300 ease-in-out hover:scale-105"
-        >
+    <header className="bg-white shadow-sm">
+      <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <Link to="/" className="text-xl font-bold text-green-600">
           Quizzy
         </Link>
-        <ul className="flex space-x-4 mr-3">
-          <li>
-            <Link to="/" className="text-gray-600 hover:text-green-400 ">
-              How it works?
-            </Link>
-          </li>
-          <li>
-            <Link to="/aboutus" className="text-gray-600 hover:text-green-400">
-              About us
-            </Link>
-          </li>
-          <li>
-            <Link to="/" className="text-gray-600 hover:text-green-400">
-              Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link to="/login" className="text-gray-600 hover:text-green-400">
+        <div className="flex items-center space-x-4">
+          <Link
+            to="/how-to-play"
+            className="text-gray-600 hover:text-green-600 transition-colors"
+          >
+            How to Play
+          </Link>
+          <Link
+            to="/aboutus"
+            className="text-gray-600 hover:text-green-600 transition-colors"
+          >
+            About Us
+          </Link>
+          {isAuthenticated ? (
+            <>
+              <Link
+                to="/dashboard"
+                className="text-gray-600 hover:text-green-600 transition-colors"
+              >
+                Dashboard
+              </Link>
+              <button
+                onClick={handleLogout}
+                className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <Link
+              to="/login"
+              className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+            >
               Login
             </Link>
-          </li>
-        </ul>
+          )}
+        </div>
       </nav>
     </header>
   );
 }
-
-export default Header;

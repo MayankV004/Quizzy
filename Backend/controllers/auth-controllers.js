@@ -73,3 +73,31 @@ export const Logout = async (req, res) => {
     });
   }
 };
+export const verifyAuth = async (req, res) => {
+  try {
+    res.status(200).json({ 
+      verified: true,
+      user: req.user
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: "failed",
+      message: error.message
+    });
+  }
+};
+
+export const getUserData = async (req, res) => {
+  try {
+    const user = await User.findById(req.user._id)
+      .select("-password")
+      .lean();
+
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({
+      status: "failed",
+      message: error.message
+    });
+  }
+};
