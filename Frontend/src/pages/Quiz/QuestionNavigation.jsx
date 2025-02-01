@@ -9,7 +9,7 @@ export const QuestionNavigation = ({
   return (
     <div className="bg-white rounded-xl shadow-md p-4">
       <div className="flex flex-wrap gap-2 justify-center">
-        {[...Array(totalQuestions)].map((_, index) => (
+        {[...Array(totalQuestions)].map((item, index) => (
           <button
             key={index}
             onClick={() => onQuestionSelect(index)}
