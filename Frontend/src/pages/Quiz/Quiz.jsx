@@ -96,7 +96,7 @@ export default function Quiz() {
   };
 
   if (!quizData)
-    return <div className="text-green-600 text-xl">Loading Quiz...</div>;
+    return <div className="text-green-600 text-xl ">Loading Quiz...</div>;
 
   if (quizSubmitted) {
     return (

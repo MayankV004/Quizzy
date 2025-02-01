@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm">
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold text-green-600">
+        <Link to="/" className="text-3xl font-bold text-green-600 transition-all duration-300 ease-in-out transform hover:scale-105">
           Quizzy
         </Link>
         <div className="flex items-center space-x-4">
@@ -66,7 +66,7 @@ export default function Header() {
               </Link>
               <button
                 onClick={handleLogout}
-                className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors"
+                className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600  transition-all duration-300 ease-in-out transform hover:scale-105"
               >
                 Logout
               </button>
@@ -74,7 +74,7 @@ export default function Header() {
           ) : (
             <Link
               to="/login"
-              className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+              className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600  transition-all duration-300 ease-in-out transform hover:scale-105"
             >
               Login
             </Link>

@@ -47,7 +47,7 @@ export default function HowToPlay() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {steps.map((step, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md p-6">
+            <div key={index} className="bg-white rounded-xl shadow-md p-6 transition-all duration-300 ease-in-out transform hover:scale-105">
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <div className="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center">
@@ -82,7 +82,7 @@ export default function HowToPlay() {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center transition-all duration-300 ease-in-out transform hover:scale-105">
           <Link
             to="/quiz"
             className="inline-block bg-green-500 text-white px-8 py-3 rounded-lg hover:bg-green-600 transition-colors"

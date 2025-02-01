@@ -7,7 +7,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import HowToPlay from "./pages/HowToPlay/HowToPlay";
 import { Toaster } from "react-hot-toast";
-import { ProtectedRoute } from "./conponents/ProtectedRoute";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 
 function App() {
   return (

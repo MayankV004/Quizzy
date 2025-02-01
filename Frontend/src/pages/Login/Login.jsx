@@ -34,6 +34,9 @@ function Login() {
   return (
     <div className="w-full flex items-center justify-center h-screen ">
       <div className="w-1/3">
+      <h3 className="text-4xl mb-3">
+            Welcome to <span className="text-green-400 font-semibold">Quizzy</span>
+          </h3>
         <h4 className="text-2xl capitalize mb-5">Login your account</h4>
         <form
           autoComplete="off"
