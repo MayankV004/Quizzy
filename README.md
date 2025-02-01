@@ -44,6 +44,7 @@ A Gamified Quizzing Website that makes learning fun and interactive! Challenge y
 - Responsive design for all devices
 
 ## Live Demo
+<video controls src="Quizzy - Google Chrome 2025-02-01 23-00-39.mp4" title="Title"></video>
 
 #### Home Page
 ![alt text](<Screenshot 2025-02-01 223108.png>)
@@ -113,6 +114,7 @@ A Gamified Quizzing Website that makes learning fun and interactive! Challenge y
    - Create a database named 'quizzy'
    - Update connection string in mongoose-connection.js
    - Please make sure to have MongoDB compass for database
+   
 
    ```bash
    # Start server
