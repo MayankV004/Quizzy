@@ -10,7 +10,7 @@ export default function Header() {
   useEffect(() => {
     const verifyAuth = async () => {
       try {
-        await axios.get("http://localhost:3000/v1/auth/verify", {
+        await axios.get("https://quizzy-backend-gnv8.onrender.com/v1/auth/verify", {
           withCredentials: true,
         });
         setIsAuthenticated(true);
