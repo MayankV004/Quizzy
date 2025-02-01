@@ -25,7 +25,7 @@ export default function Header() {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/v1/auth/logout",
+        "https://quizzy-backend-gnv8.onrender.com/v1/auth/logout",
         {},
         { withCredentials: true }
       );
