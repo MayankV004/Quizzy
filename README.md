@@ -44,7 +44,7 @@ A Gamified Quizzing Website that makes learning fun and interactive! Challenge y
 - Responsive design for all devices
 
 ## Live Demo
-[![Watch the video](https://raw.githubusercontent.com/MayankV004/Quizzy/main/Frontend/public/Quizzy.mp4)](https://raw.githubusercontent.com/MayankV004/Quizzy/Frontend/public/Quizzy.mp4)
+https://github.com/user-attachments/assets/2b6d6e31-ecfd-4c9a-8d8a-c890be83faea
 
 #### Home Page
 ![alt text](<Frontend//public/Screenshot 2025-02-01 223108.png>)
