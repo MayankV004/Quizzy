@@ -9,7 +9,7 @@ export const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const verifyAuth = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/v1/auth/verify", {
+        const response = await axios.get("https://quizzy-backend-gnv8.onrender.com/v1/auth/verify", {
           withCredentials: true,
         });
         setIsAuthenticated(true);
