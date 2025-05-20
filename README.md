@@ -38,7 +38,7 @@ A Gamified Quizzing Website that makes learning fun and interactive! Challenge y
 ## 🎯 Additional Features
 
 - Integrated react-hot-toast for seamless user notifications
-- Questions fetched from API (https://api.jsonserve.com/Uw5CrX)
+- Questions fetched from API (https://api.jsonserve.com/Uw5CrX)[Currently API is NOT WORKING!]
 - Protected routes for secure account access
 - Auto-submission when quiz timer expires
 - Responsive design for all devices
